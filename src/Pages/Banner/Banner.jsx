@@ -13,7 +13,7 @@ import { bannerAssets } from "../../../public/assets";
 
 export default function Banner() {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen border-4">
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -30,17 +30,21 @@ export default function Banner() {
       >
         {bannerAssets.map((assets, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="w-full h-screen bg-cover bg-center"
-              style={{ backgroundImage: `url(${assets.image})` }}
+            <header
+              className="w-full h-screen bg-center bg-cover flex flex-col lg:flex-row items-center gap-12 lg:gap-0 justify-center"
+              style={{
+                backgroundImage: `url(${assets.image.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+              }}
             >
-              <div className="flex flex-col justify-center items-center h-full bg-black bg-opacity-50">
-                <h1 className="text-white text-4xl font-bold">
+              <div className="w-full lg:w-[70%]  flex flex-col justify-center bg-opacity-100 border-2">
+                <h1 className="text-4xl lg:text-6xl font-bold text-white">
                   {assets.title}
                 </h1>
-                <p className="text-white text-lg">{assets.text}</p>
+                <p className="mt-2 text-lg text-white">{assets.text}</p>
               </div>
-            </div>
+            </header>
           </SwiperSlide>
         ))}
       </Swiper>

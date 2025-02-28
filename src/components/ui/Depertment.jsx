@@ -5,17 +5,15 @@ import { Button } from "./button";
 
 function Department() {
   return (
-    <Marquee
-      className=""
-      pauseOnHover={true}
-      speed={40}
-      gradient={true}
-      style={{ height: 100 }}
-    >
-      {department.map((btn, index) => (
-        <Button key={index}>{btn.title}</Button>
-      ))}
-    </Marquee>
+    <div className="border-y-2 border-secondary bg-white py-6">
+      <Marquee pauseOnHover={true} speed={40} gradient={true}>
+        {department.map((btn, index) => (
+          <Button key={index} style={{ marginRight: 40 }}>
+            {btn.title}
+          </Button>
+        ))}
+      </Marquee>
+    </div>
   );
 }
 

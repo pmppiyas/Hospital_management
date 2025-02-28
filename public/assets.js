@@ -1,23 +1,52 @@
+import doctor1 from "@/assets/doctor.png";
+import doctor2 from "@/assets/banner1.jpg";
+import banner3 from "@/assets/10130.jpg";
+import banner4 from "@/assets/banner4.jpg";
+
+export const navlinks = [
+  {
+    id: 1,
+    title: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "About",
+    link: "/about",
+  },
+  { id: 3, title: "Service", link: "/service" },
+  {
+    id: 4,
+    title: "Contact",
+    link: "/contact",
+  },
+];
+
 export const bannerAssets = [
   {
-    title: "Banner 1",
-    image: "https://swiperjs.com/demos/images/nature-1.jpg",
-    text: "This is the first banner",
+    title: "Welcome to Johura MatriSodon",
+    image: doctor1,
+    text: "Your Health, Our Priority",
   },
   {
-    title: "Banner 2",
-    image: "https://swiperjs.com/demos/images/nature-2.jpg",
-    text: "This is the second banner",
+    title: "Expert Medical Care You Can Trust",
+    image: doctor2,
+    text: "Your Trusted Health Partner",
   },
   {
-    title: "Banner 3",
-    image: "https://swiperjs.com/demos/images/nature-3.jpg",
-    text: "This is the third banner",
+    title: "Advanced Technology for Better Health",
+    image: banner3,
+    text: "Advanced Technology for Better Health",
   },
   {
-    title: "Banner 4",
-    image: "https://swiperjs.com/demos/images/nature-4.jpg",
-    text: "This is the fourth banner, and the last one",
+    title: "24/7 Emergency Services Ready for You",
+    image: banner4,
+    text: "Rapid Response, Compassionate Support",
+  },
+  {
+    title: "Experienced Doctors, Quality Treatment",
+    image: doctor2,
+    text: "Expertise You Can Rely On",
   },
 ];
 
