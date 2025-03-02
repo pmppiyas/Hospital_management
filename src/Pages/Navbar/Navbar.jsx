@@ -46,29 +46,31 @@ function Navbar() {
           </ul>
         </nav>
         {/* Mobile menu */}
-        {open && (
-          <motion.div
-            initial={{ y: -500, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 500, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed md:hidden top-0 left-0 bg-primary bg-opacity-90 z-50 flex items-center justify-center h-screen w-3/4"
-          >
-            <nav className="flex flex-col gap-4 text-xl font-medium text-foreground">
-              {navlinks.map((nav, id) => (
-                <motion.div
-                  className="hover:scale-125"
-                  key={id}
-                  initial={{ y: -20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: id * 0.1 }}
-                >
-                  <Link href={nav.link}>{nav.title}</Link>
-                </motion.div>
-              ))}
-            </nav>
-          </motion.div>
-        )}
+ {open && (
+  <motion.div
+    initial={{ y: -500, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    exit={{ y: -500, opacity: 0 }} // Changed exit animation to move upwards
+    transition={{ duration: 0.3 }}
+    className="fixed md:hidden top-0 left-0 bg-primary bg-opacity-90 z-50 flex items-center justify-center h-screen w-3/4"
+  >
+    <nav className="flex flex-col gap-4 text-xl font-medium text-foreground">
+      {navlinks.map((nav, id) => (
+        <motion.div
+          className="hover:scale-125"
+          key={id}
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }} // Added exit animation for each item
+          transition={{ delay: id * 0.1 }}
+        >
+          <Link href={nav.link}>{nav.title}</Link>
+        </motion.div>
+      ))}
+    </nav>
+  </motion.div>
+)}
+
         {/* Button */}
         <div className="text-lg flex items-center justify-center gap-2 ">
           <Button size="sm">Call a Doctor</Button>
