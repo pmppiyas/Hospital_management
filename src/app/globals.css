@@ -11,15 +11,15 @@
 
 @layer base {
   :root {
-    --background: rgba(247, 245, 239, 1);
+    --background: rgba(227, 235, 252, 0.8);
     --foreground: rgba(0, 0, 0, 1);
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: rgba(244, 130, 33, 1);
+    --primary: rgba(17, 53, 241, 0.8);
     --primary-foreground: 210 40% 98%;
-    --secondary: rgba(175, 151, 99, 1);
+    --secondary: rgba(119, 135, 219, 0.8);
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -40,15 +40,15 @@
 
   .dark {
     --background: rgba(0, 0, 0, 1);
-    --foreground: rgba(247, 245, 239, 1);
+    --foreground: rgba(227, 235, 252, 0.8);
     --white: rgba(0, 0, 0, 1);
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: rgba(244, 130, 33, 1);
+    --primary: rgba(17, 53, 241, 0.8);
     --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: rgba(175, 151, 99, 1);
+    --secondary: rgba(119, 135, 219, 0.8);
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;

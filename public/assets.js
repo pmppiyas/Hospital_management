@@ -2,7 +2,12 @@ import doctor1 from "@/assets/doctor.png";
 import doctor2 from "@/assets/banner1.jpg";
 import banner3 from "@/assets/10130.jpg";
 import banner4 from "@/assets/banner4.jpg";
-
+import medicel1 from "@/assets/medicel1.jpg";
+import medicel2 from "@/assets/medicel2.jpg";
+import medicel3 from "@/assets/medicel3.jpg";
+import medicel4 from "@/assets/medicel4.jpg";
+import medicel5 from "@/assets/medicel5.jpg";
+import medicel6 from "@/assets/medicel6.jpg";
 export const navlinks = [
   {
     id: 1,
@@ -45,7 +50,7 @@ export const bannerAssets = [
   },
   {
     title: "Experienced Doctors, Quality Treatment",
-    image: doctor2,
+    image: medicel1,
     text: "Expertise You Can Rely On",
   },
 ];
@@ -54,32 +59,32 @@ export const department = [
   {
     title: "Cardiology",
     link: "/depertment/cardiology",
-    image: "https://swiperjs.com/demos/images/nature-1.jpg",
+    image: medicel1,
   },
   {
     title: "Dentistry",
     link: "/depertment/dentistry",
-    image: "https://swiperjs.com/demos/images/nature-2.jpg",
+    image: medicel2,
   },
   {
     title: "Neurology",
     link: "/depertment/neurology",
-    image: "https://swiperjs.com/demos/images/nature-3.jpg",
+    image: medicel6,
   },
   {
     title: "Orthopedics",
     link: "/depertment/orthopedics",
-    image: "https://swiperjs.com/demos/images/nature-4.jpg",
+    image: medicel4,
   },
   {
-    title: "Pediatrics",
-    link: "/depertment/pediatrics",
-    image: "https://swiperjs.com/demos/images/nature-1.jpg",
+    title: "Altrasnopraphy",
+    link: "/depertment/altrasnopraphy",
+    image: medicel5,
   },
   {
     title: "Surgery",
     link: "/depertment/surgery",
-    image: "https://swiperjs.com/demos/images/nature-2.jpg",
+    image: medicel3,
   },
   {
     title: "Urology",
