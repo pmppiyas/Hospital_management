@@ -32,7 +32,7 @@ function Services() {
             key={idx}
             className="w-full h-[250px] relative overflow-hidden group cursor-pointer rounded-md flex items-end"
             data-aos="fade-up"
-            data-aos-delay={idx * 100}
+            data-aos-delay={idx * 300}
           >
             {/* Background Image */}
             <div className="absolute inset-0">

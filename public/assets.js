@@ -8,6 +8,10 @@ import medicel3 from "@/assets/medicel3.jpg";
 import medicel4 from "@/assets/medicel4.jpg";
 import medicel5 from "@/assets/medicel5.jpg";
 import medicel6 from "@/assets/medicel6.jpg";
+import ambulance from "@/assets/ambulance.jpg";
+import hospital1 from "@/assets/hospital1.jpg";
+import hospital2 from "@/assets/hospital2.jpg";
+import plus from "@/assets/plus.png";
 export const navlinks = [
   {
     id: 1,
@@ -30,7 +34,7 @@ export const navlinks = [
 export const bannerAssets = [
   {
     title: "Welcome to Johura MatriSodon",
-    image: doctor1,
+    image: hospital2,
     text: "Your Health, Our Priority",
   },
   {
@@ -40,12 +44,12 @@ export const bannerAssets = [
   },
   {
     title: "Advanced Technology for Better Health",
-    image: banner3,
+    image: medicel6,
     text: "Advanced Technology for Better Health",
   },
   {
     title: "24/7 Emergency Services Ready for You",
-    image: banner4,
+    image: ambulance,
     text: "Rapid Response, Compassionate Support",
   },
   {
@@ -97,3 +101,9 @@ export const department = [
     image: "https://swiperjs.com/demos/images/nature-4.jpg",
   },
 ];
+
+export const allAssests = {
+  banner3,
+  banner4,
+  plus,
+};
