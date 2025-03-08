@@ -102,8 +102,37 @@ export const department = [
   },
 ];
 
+export const testimonials = [
+  {
+    id: 1,
+    text: "This is the best service I have ever used.",
+    author: "Zihad Sarker",
+  },
+  {
+    id: 2,
+    text: "Amazing experience, highly recommend!",
+    author: "Md Hasan",
+  },
+  {
+    id: 3,
+    text: "Your team made everything seamless. Thank you!",
+    author: "Miss Rohima Begum",
+  },
+  {
+    id: 4,
+    text: "Your team made everything seamless. Thank you!",
+    author: "Abdur Rahman",
+  },
+  {
+    id: 5,
+    text: "Your team made everything seamless. Thank you!",
+    author: "Johura Begum",
+  },
+];
+
 export const allAssests = {
   banner3,
   banner4,
   plus,
+  doctor1,
 };
