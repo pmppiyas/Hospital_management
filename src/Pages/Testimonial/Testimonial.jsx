@@ -18,6 +18,7 @@ function Testimonial() {
         data-aos-delay={300}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={30}
+        navigation
         scrollbar={{ draggable: true }}
         breakpoints={{
           450: {

@@ -20,7 +20,7 @@ function Services() {
   const limitedDepartment = department.slice(0, 6);
 
   return (
-    <div className="min-h-screen py-10">
+    <div className="min-h-screen py-10 ">
       <Heading
         title={"Services"}
         subtitle={"Advanced Technology for Better Health"}

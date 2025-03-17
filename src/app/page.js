@@ -5,7 +5,7 @@ import Testimonial from "@/Pages/Testimonial/Testimonial";
 
 export default function Home() {
   return (
-    <div className="border-4 border-yellow-600">
+    <div className="">
       <Banner></Banner>
       <Depertment></Depertment>
       <Services></Services>
